@@ -10,6 +10,6 @@ docker push naveejr/multi-server:$SHA
 docker push naveejr/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/client-deployment cient=naveejr/multi-client:$SHA
+kubectl set image deployments/client-deployment client=naveejr/multi-client:$SHA
 kubectl set image deployments/server-deployment server=naveejr/multi-server:$SHA
 kubectl set image deployments/worker-deployment worker=naveejr/multi-worker:$SHA
